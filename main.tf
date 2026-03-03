@@ -2,8 +2,8 @@ provider "github" {
   token = var.github_token
 }
 
-resource "github_repository" "managed_repo" {
-  name        = "terraform-managed-demo"
-  description = "This repository is managed by Terraform"
+resource "github_repository" "readme_repo" {
+  name        = "alexandroivaldez"
+  description = "Profile README repo"
   visibility  = "public"
 }
