@@ -4,10 +4,3 @@ module "profile_repo" {
   repo_name    = "alexandroivaldez"
   description  = "Profile README repo"
 }
-
-module "test_repo" {
-  source       = "./modules/repository"
-  github_token = var.github_token
-  repo_name    = "repo-test"
-  description  = "Testing repo"
-}
