@@ -5,7 +5,7 @@ module "profile_repo" {
   description  = "Profile README repo"
 }
 
-module "profile_repo" {
+module "deployment_observatory_repo" {
   source       = "./modules/repository"
   github_token = var.github_token
   repo_name    = "deployment-observatory"
