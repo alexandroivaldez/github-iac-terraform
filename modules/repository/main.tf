@@ -19,7 +19,7 @@ resource "github_branch_protection" "main" {
 
   required_status_checks {
     strict   = true
-    contexts = []
+    contexts = ["Terraform"]
   }
 
   enforce_admins = true
