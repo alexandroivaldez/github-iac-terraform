@@ -20,7 +20,6 @@ module "k8s_url_shortener_repo" {
   repo_name    = "k8s-url-shortener"
   description  = "A URL shortener built with FastAPI and deployed on Kubernetes."
   status_check_contexts = ["Terraform"]
-  visibility = "private"
 }
 
 module "neo_visualizer_pipeline_repo" {
