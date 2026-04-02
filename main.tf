@@ -35,4 +35,5 @@ module "plantops_dashboard_repo" {
   github_token = var.github_token
   repo_name    = "plantops-dashboard"
   description  = "PlantOps Dashboard is an IoT monitoring system that tracks my plants health metrics such as soil moisture, light exposure, and growth over time. Built using Python, Terraform, Ansible and Jenkins."
+  status_check_contexts = []
 }
