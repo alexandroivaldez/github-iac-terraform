@@ -29,3 +29,11 @@ module "neo_visualizer_pipeline_repo" {
   description  = "Serverless ETL pipeline that fetches Near-Earth Object data, transforms and stores it on AWS, and visualizes asteroid trajectories in 3D. Built with Python, Terraform, and Three.js"
   status_check_contexts = []
 }
+
+module "plantops_dashboard_repo" {
+  source       = "./modules/repository"
+  github_token = var.github_token
+  repo_name    = "plantops-dashboard"
+  description  = "PlantOps Dashboard is an IoT monitoring system that tracks my plants health metrics such as soil moisture, light exposure, and growth over time. Built using Python, Terraform, Ansible and Jenkins."
+  status_check_contexts = []
+}
