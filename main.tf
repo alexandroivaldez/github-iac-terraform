@@ -27,7 +27,7 @@ module "neo_visualizer_pipeline_repo" {
   github_token = var.github_token
   repo_name    = "neo-visualizer-pipeline"
   description  = "Serverless ETL pipeline that fetches Near-Earth Object data, transforms and stores it on AWS, and visualizes asteroid trajectories in 3D. Built with Python, Terraform, and Three.js"
-  status_check_contexts = []
+  status_check_contexts = ["Terraform"]
 }
 
 module "plantops_dashboard_repo" {
